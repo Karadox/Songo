@@ -1,0 +1,19 @@
+<ion-view view-title="{{currentList.title}}">
+  <ion-content>
+	<ion-list>
+		<ion-item>Title <span class="item-note">{{currentList.title}}</span></ion-item>
+		<ion-item>Genre <span class="item-note">{{currentList.genre}}</span></ion-item>
+	</ion-list>
+
+	<div class="card">
+	  <div class="item item-divider">
+		Songs
+	  </div>
+	  <div class="item item-text-wrap" ng-repeat="song in currentList.songs">
+        <h2>{{song.title}}</h2>
+		<p>{{song.author}}</p>
+	  </div>
+	</div>
+
+  </ion-content>
+</ion-view>

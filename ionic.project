@@ -1,0 +1,12 @@
+{
+  "name": "songo",
+  "app_id": "0d195898",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

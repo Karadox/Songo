@@ -1,0 +1,23 @@
+<ion-view view-title="Timer">
+  <ion-content>
+	<label class="item">
+	  <button class="button icon-left ion-refresh button-block button-positive" ng-click="refreshCurrentTime(); convertTime();">Refresh current time</button>
+    </label>
+    <label class="item item-input item-stacked-label">
+	  <span class="input-label">Current time</span>
+	  <input type="datetime-local" id="currentDate" name="currentDate" ng-model="data.currentDate" required ng-change="convertTime()">
+	</label>
+    <label class="item item-input item-stacked-label">
+	  <span class="input-label">Device time</span>
+	  <input type="datetime-local" id="deviceDate" name="deviceDate" ng-model="data.deviceDate" required ng-change="convertTime()">
+	</label>
+    <label class="item item-input item-stacked-label">
+	  <span class="input-label">Requested time</span>
+	  <input type="datetime-local" id="requestedDate" name="requestedDate" ng-model="data.requestedDate" required ng-change="convertTime()">
+	</label>
+    <label class="item item-input item-stacked-label">
+	  <span class="input-label">Corrected time</span>
+	  <input type="datetime-local" id="correctedDate" name="correctedDate" ng-model="data.correctedDate" ng-readonly="true">
+	</label>
+  </ion-content>
+</ion-view>
