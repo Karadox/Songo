@@ -14,7 +14,7 @@ angular.module('songo.utils', [])
     getObject: function(key) {
       return JSON.parse($window.localStorage[key] || '{}');
     }
-  }
+  };
 }])
 
 .factory('$playlistsFactory', [function() {
@@ -32,5 +32,5 @@ angular.module('songo.utils', [])
     getObject: function(key) {
       return JSON.parse(items[key] || '{}');
     }
-  }
-}])
+  };
+}]);

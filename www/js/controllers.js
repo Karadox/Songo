@@ -20,7 +20,7 @@ angular.module('songo.controllers', [])
 		$scope.data.currentDate = today;
 		
 		//$scope.convertTime($scope); execute in html instead of here?
-	}
+	};
 	
 	/* device time is different from normal time.
 	requested is time on the device relative to normal time.
@@ -41,14 +41,14 @@ angular.module('songo.controllers', [])
 		$scope.timeSolution = correctedDate.toString();
 		
 		$scope.data.correctedDate = correctedDate;
-	}
+	};
 
 })
   
 .controller('PlaylistsCtrl', function($scope, $playlistsFactory) {
 	//$scope.playlists = $localstorage.getObject('playlists'); // Get device list
 	
-	$scope.playlists =  $playlistsFactory.getObject('playlists', null)
+	$scope.playlists =  $playlistsFactory.getObject('playlists', null);
 	
 //	console.log("playlists:", $scope.playlists);
 /*	
@@ -88,8 +88,8 @@ angular.module('songo.controllers', [])
 		}, function(err) {
 			console.error('ERR', err);
 			// err.status will contain the status code
-		})
-	}
+		});
+	};
 })
 
 // EOF

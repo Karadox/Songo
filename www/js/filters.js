@@ -4,7 +4,7 @@ angular.module('songo.filters', [])
 {
  return function(input)
  {
-  if(input == null){ return ""; } 
+  if(input === null){ return ""; }
  
   var _date = $filter('date')(new Date(input), 'dd-MM-yyyy');
  
@@ -17,7 +17,7 @@ angular.module('songo.filters', [])
 {
  return function(input)
  {
-  if(input == null){ return ""; } 
+  if(input === null){ return ""; }
  
   var _date = $filter('date')(new Date(input), 'MM-dd-yyyy - HH:mm');
  
@@ -35,7 +35,7 @@ angular.module('songo.filters', [])
       }
     }
     return null;
-  }
+  };
 })
 
 // EOF
